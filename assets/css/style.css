@@ -3571,16 +3571,17 @@ section {
   }
 }
 .banner-section .banner-thumb {
-  position: absolute;
+  /* position: absolute; */
   left: -130px;
-  bottom: -1300px;
+  /* bottom: -300px; */
   width: 123%;
   animation: scale 4s linear;
-  z-index: 9;
+  /* z-index: 9; */
 }
 .banner-section .banner-thumb img {
-  animation: ImgAnimate 3s infinite cubic-bezier(0.4, 0, 1, 1) 0.2s;
+  /* animation: ImgAnimate 3s infinite cubic-bezier(0.4, 0, 1, 1) 0.2s; */
   width: 100%;
+  padding-bottom: 200px;
 }
 @media only screen and (max-width: 1199px) {
   .banner-section .banner-thumb {
