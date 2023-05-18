@@ -104,13 +104,32 @@ html {
 
 body {
   background-color: white;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
   color: #3d3d3d;
   overflow-x: hidden;
 }
+.top-nav-bar {
+  background-color: #1F2E3C !important;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.top-nav-bar .email,
+.top-nav-bar .address {
+  color: white;
+  font-size: 16px;
+}
+
+.top-nav-bar a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 991px) {
   body {
     font-size: 14px;
@@ -801,9 +820,9 @@ blockquote .quote-icon {
   position: absolute;
   top: 42%;
   left: -142px;
-  background-color: #FFF8EE;
+  background-color: transparent;
   transform: rotate(-90deg);
-  color: #19232d;
+  color: white;
   font-weight: 700;
   border-radius: 5px 5px 0 0;
   display: flex;
@@ -820,14 +839,14 @@ blockquote .quote-icon {
   align-items: center;
 }
 .call-widget-wrapper .call-widget-btn i {
-  color: #dcbb87;
+  color: #be1e2d;
   font-size: 18px;
   margin-right: 8px;
 }
 .call-widget-wrapper .call-widget-btn .arrow {
   width: 50px;
   height: 100%;
-  background-color: #dcbb87;
+  background-color: #be1e2d;
   position: relative;
 }
 .call-widget-wrapper .call-widget-btn .arrow::after {
@@ -899,7 +918,7 @@ blockquote .quote-icon {
   font-weight: 800;
   text-align: left;
   color: #19232d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 16px;
   padding: 15px 30px;
   border-right: 2px solid #e5e5e5;
@@ -918,7 +937,7 @@ blockquote .quote-icon {
   font-weight: 700;
   text-align: left;
   color: #3d3d3d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 16px;
   padding: 15px 30px;
   border-right: 2px solid #e5e5e5;
@@ -1085,7 +1104,7 @@ blockquote .quote-icon {
   background-color: white;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Hind', sans-serif !important;
   transition: all 0.3s;
 }
 .nav-tabs .nav-link:hover {
@@ -1310,7 +1329,7 @@ h4 a:hover {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 20px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   margin-top: -4px;
 }
 @media only screen and (max-width: 991px) {
@@ -1510,8 +1529,8 @@ input::-moz-focus-inner {
 
 .btn--base {
   position: relative;
-  background: #dcbb87;
-  border: 1px solid #dcbb87;
+  background: #be1e2d;
+  border: 1px solid #19232d;
   color: #19232d;
   padding: 12px 25px;
   border-radius: 999px;
@@ -1525,14 +1544,15 @@ input::-moz-focus-inner {
 .btn--base.active {
   background: transparent;
   border: 1px solid transparent;
-  color: #dcbb87;
+  color: #be1e2d;
 }
 .btn--base.active:hover {
   color: #19232d;
-  background: #dcbb87;
+  background: #be1e2d;
 }
 .btn--base:focus, .btn--base:hover {
-  color: #dcbb87;
+  color: #be1e2d;
+  border-color: white;
   background-color: transparent;
 }
 @media only screen and (max-width: 991px) {
@@ -1583,7 +1603,7 @@ label {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Hind', sans-serif;
   display: block;
 }
 
@@ -2537,6 +2557,7 @@ section {
 */
 .header-section {
   position: absolute;
+  padding-top: 100px;
   top: 0;
   left: 0;
   width: 100%;
@@ -2793,7 +2814,7 @@ section {
   font-weight: 700;
   align-items: center;
   color: #19232d;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Hind', sans-serif, !important;
   display: inline-block;
   font-size: 30px;
   transition: all 0.3s;
@@ -2809,7 +2830,7 @@ section {
 .header-section-one .navbar-collapse .main-menu li a {
   color: white;
   font-size: 16px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif, !important;
 }
 
 .navbar-collapse .main-menu li .sub-menu {
@@ -3073,7 +3094,7 @@ section {
 }
 .page-wrapper-two .navbar-collapse .main-menu li a {
   font-size: 16px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   padding: 0;
 }
@@ -3536,6 +3557,13 @@ section {
 /*--------------------------------------------------------------
     [ ## Introduction ]
 --------------------------------------------------------------*/
+#banner-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 1s;
+}
+
 .banner-section {
   position: relative;
   padding-top: 295px;
@@ -3704,7 +3732,7 @@ section {
   font-size: 30px;
   color: white;
   text-transform: uppercase;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   margin-bottom: 25px;
 }
 @media only screen and (max-width: 991px) {
@@ -3747,12 +3775,15 @@ section {
 }
 .banner-section .banner-content .banner-btn a {
   background-color: transparent;
-  color: #dcbb87;
+  color: #BE1E2D;
+  border-color: white;
   margin: 5px;
+  font-weight: bolder;
   position: relative;
   overflow: hidden;
 }
 .banner-section .banner-content .banner-btn a i::before {
+  border-color: black;
   transition: all 0.5s;
 }
 .banner-section .banner-content .banner-btn a::after {
@@ -3762,7 +3793,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #dcbb87;
+  border-color: black;
+  background-color: white;
   border-radius: 999px;
   transform-origin: 100px 100px;
   transform: translate(-10px, -70px) scale(0.1);
@@ -4010,7 +4042,7 @@ section {
   padding-left: 10px;
 }
 .page-wrapper-two .banner-section .banner-widget-one .banner-widget-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   margin-bottom: 3px;
   font-weight: 800;
 }
@@ -4056,7 +4088,7 @@ section {
   padding-left: 10px;
 }
 .page-wrapper-two .banner-section .banner-widget-two .banner-widget-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   margin-bottom: 3px;
 }
 .page-wrapper-two .banner-section .banner-widget-two .banner-widget-content .banner-widget-btn {
@@ -4190,7 +4222,7 @@ section {
 
 .breadcrumb li {
   color: #19232d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 .breadcrumb-item a {
@@ -4271,7 +4303,7 @@ section {
 .footer-widget .title {
   color: white;
   position: relative;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -4327,7 +4359,7 @@ section {
   color: #3d3d3d;
   border: none;
   border-radius: 5px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 14px;
   padding-left: 40px;
   height: 45px;
@@ -4557,7 +4589,7 @@ section {
   text-align: center;
 }
 .team-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
 }
 .team-content .title a {
@@ -4912,7 +4944,7 @@ section {
 
 .client-footer-left .title {
   font-weight: 800;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 20px;
 }
 @media only screen and (max-width: 991px) {
@@ -5091,7 +5123,7 @@ section {
   position: relative;
 }
 .overview-tab .nav-tabs .nav-link span {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   margin-right: 5px;
   font-weight: 800;
 }
@@ -5251,7 +5283,7 @@ section {
 .nav-tab-header .sub-title {
   color: white;
   margin-bottom: 15px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-top: -10px;
@@ -5324,7 +5356,7 @@ section {
   font-size: 20px;
   color: white;
   margin-bottom: 15px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 @media only screen and (max-width: 991px) {
   .about-content .sub-title {
@@ -5601,7 +5633,7 @@ section {
 }
 .page-wrapper-two .about-statistics-area .odo-title {
   color: #19232d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 900;
   font-size: 65px;
   margin-top: 0;
@@ -5814,7 +5846,7 @@ section {
   border-radius: 10px;
 }
 .about--style-three .about-content .sub-title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
 }
 .about--style-three .about-content .title {
@@ -6219,7 +6251,7 @@ section {
   color: #3d3d3d;
 }
 .feature--style .feature-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -6384,7 +6416,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .statistics--style .odo-title {
   color: #19232d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 900;
   font-size: 45px;
 }
@@ -6555,7 +6587,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .book-form label {
   text-align: left;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: white;
@@ -6567,7 +6599,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   color: white;
   font-size: 14px;
   padding-left: 35px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 500;
 }
 .book-form .book-form-icon {
@@ -6856,7 +6888,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   padding-left: 10px;
 }
 .package-details .package-widget-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
 }
 .package-details .package-widget-content .sub-title {
@@ -7097,7 +7129,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .course-download-area .download-content .title {
   width: calc(100% - 40px);
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
   padding-left: 20px;
   margin-bottom: 0;
@@ -7257,7 +7289,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   border: 1px solid #e5e5e5;
   background-color: white;
   color: #3d3d3d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
 }
 .ratings-form .form--control:focus {
@@ -7371,7 +7403,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .package-comment-content .package-comment-content-header .title {
   margin-bottom: 0;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   margin-right: 30px;
 }
@@ -7485,7 +7517,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 .offer-content .sub-title {
   font-weight: 700;
   color: white;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 18px;
   margin-bottom: 15px;
 }
@@ -7682,7 +7714,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .subscribe-area .subscribe-content .sub-title {
   color: #19232d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   font-size: 20px;
   margin-bottom: 15px;
@@ -7745,7 +7777,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   margin-bottom: 0;
 }
 .subscribe-area .subscribe-form .custom-check-group label {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   color: #19232d;
   font-weight: 500;
   font-size: 16px;
@@ -7808,7 +7840,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   font-size: 65px;
   line-height: 65px;
   color: #E8E9EA;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 900;
   margin-bottom: 15px;
 }
@@ -8117,7 +8149,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .faq-header-area .sub-title {
   color: #dcbb87;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   font-size: 20px;
   margin-bottom: 15px;
@@ -8215,7 +8247,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 .faq-wrapper .faq-item .faq-title .title {
   width: calc(100% - 40px);
   display: inline-block;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -8442,7 +8474,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 .four-not-four-form input {
   border: 1px solid #e5e5e5;
   background-color: white;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   color: #3d3d3d;
   padding: 10px 40px 10px 15px;
   font-weight: 700;
@@ -8488,7 +8520,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   font-size: 20px;
   color: #dcbb87;
   margin-bottom: 15px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 @media only screen and (max-width: 991px) {
   .contact-left-content .sub-title {
@@ -8570,7 +8602,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   border-radius: 3px;
   height: 50px;
   color: #3d3d3d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   padding: 10px 40px 10px 15px;
   font-weight: 700;
 }
@@ -8595,7 +8627,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   font-size: 20px;
   color: #dcbb87;
   margin-bottom: 15px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 @media only screen and (max-width: 991px) {
   .contact-widget .contact-form-header .sub-title {
@@ -8636,7 +8668,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   padding-left: 20px;
 }
 .contact-widget .contact-item-list li .contact-item-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   font-size: 24px;
 }
@@ -8680,7 +8712,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 .account-form input {
   border: 1px solid #dcbb87;
   color: #3d3d3d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   padding: 10px 40px 10px 15px;
   height: 50px;
   font-weight: 700;
@@ -8712,7 +8744,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 
 .or label {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   color: #19232d;
   font-weight: 700;
   position: relative;
@@ -8740,7 +8772,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 
 .account-item label {
   color: #3d3d3d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
   font-size: 15px;
 }
@@ -8929,7 +8961,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 .widget-box .widget-title {
   margin-bottom: 20px;
   font-weight: 800;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   position: relative;
   z-index: 2;
 }
@@ -8959,7 +8991,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 40px 10px 15px;
   color: white;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 400;
 }
 .package-book-form .form--control:focus {
@@ -9010,7 +9042,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 .single-popular-item .popular-item-content .title {
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 700;
 }
 .single-popular-item .popular-item-content .title a {
@@ -9082,7 +9114,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .search-widget-box .search-form input {
   border: 1px solid #e5e5e5;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   padding: 10px 40px 10px 15px;
   color: #3d3d3d;
   font-weight: 700;
@@ -9415,7 +9447,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   background-color: white;
   height: 50px;
   color: #3d3d3d;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 400;
 }
 .blog-comment-area .comment-form .form--control:focus {
@@ -9487,7 +9519,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
   padding-left: 15px;
 }
 .instructor-header-area .instructor-content .title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   margin-bottom: 3px;
 }

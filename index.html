@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -63,10 +66,26 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Start Header
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+</div>
+<div class="top-nav-bar">
+    <div class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:email@example.com">alain@aerodepot.com</a>
+    </div>
+    <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>1800 North bayshore DR, Miami, USA</span>
+    </div>
+</div>
+
         <header class="header-section header-section-one">
+            
             <div class="header">
+                
                 <div class="header-bottom-area">
                     <div class="container-fluid">
+                        
                         <div class="header-menu-content">
                             <nav class="navbar navbar-expand-lg p-0">
                                 <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png"
@@ -152,50 +171,79 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Start Banner
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section class="banner-section">
-            <div class="banner-element" data-aos="fade-left" data-aos-duration="1200">
-                <img src="assets/images/element/element-1.png" alt="element">
-            </div>
-            <div class="banner-element-two">
-                <img src="assets/images/element/element-3.png" alt="element">
-            </div>
-            <div class="banner-element-three">
-                <img src="assets/images/element/element-4.png" alt="element">
-            </div>
-            <div class="banner-element-four">
-                <img src="assets/images/element/element-5.png" alt="element">
-            </div>
-            <div class="banner-social-area">
-                <ul class="banner-social">
-                    <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#0" class="active"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <div class="row justify-content-center align-items-center mb-30-none">
-                    <div class="col-xxl-5 col-xl-6 col-lg-12 mb-30">
-                        <div class="banner-content" data-aos="fade-right" data-aos-duration="1800">
-                            <span class="sub-title" ><span>FAA Repair Station # </span>adlr280E</span>
-                            <h1 class="title"> Your One-Stop Shop for Aviation Solutions</h1>
-                            <p>Aero Depot proudly raises the bar and exceeds the standard for all your aviation requirements. We look forward to working with you and exceeding your expectations</p>
-                            <div class="banner-btn">
-                                <a href="contact.html" class="btn--base"><i
-                                        class="fas fa-chevron-right mr-2"></i>Request a quote</a>
-                                <!-- <a href="contact.html" class="btn--base active">Request Quote <i
-                                        class="icon-Group-2361 ml-2"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-7 col-xl-6 col-lg-6 mb-30">
-                        <div class="banner-thumb">
-                            <img src="assets/images/element/element-2.png" alt="element">
+    <section class="banner-section" id="banner-container">
+        <!-- Other divs here -->
+        <div class="container-fluid" >
+            <div class="row justify-content-center align-items-center mb-30-none">
+                <div class="mb-30">
+                    <div class="banner-content" data-aos="fade-right" data-aos-duration="1800">
+                        <span class="sub-title" ><span>FAA Repair Station # </span>adlr280E</span>
+                        <h1 class="title"> Your One-Stop Shop for Aviation Solutions</h1>
+                        <p>Aero Depot proudly raises the bar and exceeds the standard for all your aviation requirements. We look forward to working with you and exceeding your expectations</p>
+                        <div class="banner-btn">
+                            <a href="contact.html" class="btn--base"><i class="fas fa-chevron-right mr-2"></i>Request a quote</a>
                         </div>
                     </div>
                 </div>
+                    <!-- <div class="banner-thumb">
+                        <img src="assets/images/element/element-2.png" alt="element">
+                    </div> -->
+                </div>
             </div>
-        </section>
+        </div>
+        <!-- Other divs here -->
+    </section>
+    
+    <!-- <section class="banner-section">
+        <div class="banner-element" data-aos="fade-left" data-aos-duration="1200">
+            <img src="assets/images/element/element-1.png" alt="element">
+        </div>
+        <div class="banner-element-two">
+            <img src="assets/images/element/element-3.png" alt="element">
+        </div>
+        <div class="banner-element-three">
+            <img src="assets/images/element/element-4.png" alt="element">
+        </div>
+        <div class="banner-element-four">
+            <img src="assets/images/element/element-5.png" alt="element">
+        </div>
+        <div class="banner-social-area">
+            <ul class="banner-social">
+                <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#0" class="active"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center mb-30-none">
+                <div id="bannerCarousel" class="carousel slide col-xxl-5 col-xl-6 col-lg-12 mb-30" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="assets/images/element/element-1.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/element/element-3.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/element/element-4.png" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-7 col-xl-6 col-lg-6 mb-30">
+                    <div class="banner-content" data-aos="fade-right" data-aos-duration="1800">
+                        <span class="sub-title"><span>FAA Repair Station # </span>adlr280E</span>
+                        <h1 class="title"> Your One-Stop Shop for Aviation Solutions</h1>
+                        <p>Aero Depot proudly raises the bar and exceeds the standard for all your aviation requirements. We look forward to working with you and exceeding your expectations</p>
+                        <div class="banner-btn">
+                            <a href="contact.html" class="btn--base"><i class="fas fa-chevron-right mr-2"></i>Request a quote</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+     -->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         End Banner
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -217,8 +265,7 @@
         Start Call-widget
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="call-widget-wrapper">
-            <button type="button" class="call-widget-btn"><span class="num"><i class="icon-call-icon"></i> +1 814 929
-                    4263</span> <span class="arrow"></span></button>
+            <button type="button" class="call-widget-btn"><span class="num"><i class="icon-call-icon"></i> +1 786 658 4578</span> <span class="arrow"></span></button>
             <div class="call-widget-form-area">
                 <form class="book-form">
                     <div class="row justify-content-center mb-20-none">
@@ -1311,8 +1358,25 @@
 
 
 
+
     <!-- jquery -->
     <script src="assets/js/jquery.js"></script>
+    <script>
+    $(function() {
+        var images = ['assets/images/element/element-b.avif','assets/images/element/element-a.avif','assets/images/element/element-c.avif','assets/images/element/element-a.jpeg', 'assets/images/element/element-b.jpeg', 'assets/images/element/element-c.jpeg'];
+        var i = 0;
+        console.log("entro")
+        setInterval(function() {
+            $('#banner-container').css('background-image', 'url(' + images[i] + ')');
+            if (i == images.length - 1) {
+                i = 0;
+            } else {
+                i++;
+            }
+        }, 2000); // Change image every 3 seconds
+    });
+    
+        </script>
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- swipper js -->
@@ -1331,6 +1395,8 @@
     <script src="assets/js/jquery.nice-select.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+
+    
 
 
 </body>
