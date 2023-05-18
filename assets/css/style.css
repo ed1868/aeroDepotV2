@@ -117,12 +117,15 @@ body {
   justify-content: space-between;
   background-color: transparent;
   padding: 10px;
+  
 }
 
 .top-nav-bar .email,
 .top-nav-bar .address {
   color: white;
   font-size: 16px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .top-nav-bar a {
@@ -1526,12 +1529,16 @@ input::-moz-focus-inner {
   padding: 5px 20px 7px 20px;
   font-size: 11px;
 }
-
+#callNow{
+  background: transparent;
+  border: 1px solid transparent;
+  color: black;
+}
 .btn--base {
   position: relative;
-  background: #be1e2d;
-  border: 1px solid #19232d;
-  color: #19232d;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
   padding: 12px 25px;
   border-radius: 999px;
   font-size: 16px;
@@ -3775,7 +3782,7 @@ section {
   }
 }
 .banner-section .banner-content .banner-btn a {
-  background-color: transparent;
+  background-color: white;
   color: #BE1E2D;
   border-color: white;
   margin: 5px;
@@ -5414,7 +5421,7 @@ section {
   left: -5px;
   width: 12px;
   height: 80px;
-  background-color: #dcbb87;
+  background-color: #BE1E2D;
   border-radius: 60px;
 }
 .about-book-area .about-book-element {
@@ -5464,7 +5471,7 @@ section {
   position: absolute;
   width: 180px;
   height: 180px;
-  border: 1px solid #dcbb87;
+  border: 1px solid #BE1E2D;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -5517,7 +5524,7 @@ section {
   line-height: 80px;
   text-align: center;
   border-radius: 100%;
-  color: #dcbb87 !important;
+  color: #BE1E2D !important;
   display: inline-block;
   background: rgba(220, 187, 135, 0.15);
   z-index: 999;
@@ -5535,7 +5542,7 @@ section {
   transform: rotate(-40deg);
 }
 .about-book-right a:hover i::before {
-  color: #dcbb87;
+  color: #BE1E2D;
 }
 
 .dark .waves {
